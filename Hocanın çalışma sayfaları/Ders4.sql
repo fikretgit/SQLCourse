@@ -132,15 +132,15 @@
 	/*----------------------------------------------------------------------------------------*/
 	
 	CREATE TABLE workers(
- id INTEGER PRIMARY KEY,
+	id INTEGER PRIMARY KEY,
 	id_number VARCHAR(11) UNIQUE NOT NULL,
- name TEXT DEFAULT 'NONAME',
- salary INTEGER NOT NULL
+	name TEXT DEFAULT 'NONAME',
+	salary INTEGER NOT NULL
 );
     
- INSERT INTO workers VALUES(1, '12345678910','AHMET CAN', 7000 );
- INSERT INTO workers VALUES( 2, '12345678910', 'MUSTAFA ALİ', 12000);  -- HATA (UNIQUE)
- INSERT INTO workers  (id,	id_number, salary) VALUES(3, '12345223465', 5000);
+	INSERT INTO workers VALUES(1, '12345678910','AHMET CAN', 7000 );
+	INSERT INTO workers VALUES( 2, '12345678910', 'MUSTAFA ALİ', 12000);  -- HATA (UNIQUE)
+	INSERT INTO workers  (id,	id_number, salary) VALUES(3, '12345223465', 5000);
 	INSERT INTO workers VALUES(4, '44343323465' , 'AYHAN BAK',NULL) -- HATA (NOT NULL)
 
 	/*vacation_plan tablosunu place_id sutunu PK ve employee_id sutununu ise FK olarak  değiştirirek
